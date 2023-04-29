@@ -39,11 +39,11 @@ const handleCopy=()=>{
         <p className="text-center"><label htmlFor="my-box" className="form-label bg-warning text-dark mt-2 text-center rounded px-4">{props.title}</label></p>
         <textarea className="form-control" value={text} onChange={handleOnChange} rows="3" id="myBox">{props.info}</textarea>
         </div>
-        <button className="btn btn-primary my-3 mx-3 bg-alert text-white" onClick={handleUpClick}>Convert to upperCase</button>
-        <button className="btn btn-primary my-3 mx-3 bg-alert text-white" onClick={handleLowClick}>Convert to lowerCase</button>
-        <button className="btn btn-primary my-3 mx-3 bg-alert text-white" onClick={handleAltCaseClick}>Change case of alternate characters </button>
-        <button className="btn btn-primary my-3 mx-3 bg-alert text-white" onClick={handleCopy} >Copy to clipboard </button>
-        <button className="btn btn-primary my-3 mx-3 bg-alert text-white" onClick={handleClear}>Clear </button>
+        <button disabled={text.length===0} className="btn btn-primary my-3 mx-3 bg-alert text-white" onClick={handleUpClick}>Convert to upperCase</button>
+        <button disabled={text.length===0} className="btn btn-primary my-3 mx-3 bg-alert text-white" onClick={handleLowClick}>Convert to lowerCase</button>
+        <button disabled={text.length===0} className="btn btn-primary my-3 mx-3 bg-alert text-white" onClick={handleAltCaseClick}>Change case of alternate characters </button>
+        <button disabled={text.length===0} className="btn btn-primary my-3 mx-3 bg-alert text-white" onClick={handleCopy} >Copy to clipboard </button>
+        <button disabled={text.length===0} className="btn btn-primary my-3 mx-3 bg-alert text-white" onClick={handleClear}>Clear </button>
     </div>
     <div className="container my-3">
       <div className="bg-warning text-dark rounded px-auto m-auto text-center">Your text description</div>

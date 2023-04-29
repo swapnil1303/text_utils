@@ -1,47 +1,5 @@
 import React from 'react'
 export default function About(props) {
-//  const [myStyle,setmyStyle]=useState({
-//     color:'black',
-//     backgroundColor:'white'
-    
-//   })
-
-  // if(props.mode==='dark'){
-  //   setmyStyle({
-  //     color:'white',
-  //     backgroundColor:'black',
-  //     border:'2px solid black'
-  //   })
-  // }
-  //   else{
-  //     setmyStyle({
-  //       color:'black',
-  //       backgroundColor:'white',
-  //       border:'2px solid white'
-  //     })
-  //   }
-  
-  // const [mode,setMode]=useState("Enable Dark Mode")
-  // const toggleStyle=()=>{
-  //   if(myStyle.color==='white'){
-  //     setmyStyle({
-  //       color:'black',
-  //       backgroundColor: 'white',
-  //       border: '2px solid white'
-       
-  //     })
-  //      setMode("Enable Dark Mode")
-  //   }
-  //   else{
-  //     setmyStyle({
-  //       color:'white',
-  //       backgroundColor:'black'
-        
-  //     })
-  //     setMode("Enable Light Mode")
-  //   }
-  // }
-  // $(props.mode==='dark'?'white':'black')
   return (
     <div className={`container bg-${props.mode==='dark'?'black':'white'} text-${props.mode==='dark'?'white':'black'}`} >
       <h2 >About us</h2>

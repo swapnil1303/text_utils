@@ -27,17 +27,15 @@ function App() {
   }
   return (
     <>
-    <Router>
-      <Navbar title="Textify!" aboutText="About Us" mode={mode} toggleMode={toggleMode} t_mode={tempMode}/>
-      <div className="container">
-      <Routes>
-        <Route path="/" element={<TextForm title="What do you want me to help you with?" mode={mode}  info="Enter ur shit to have operations"/>} />
-        
-        <Route path="/about" element={<About owner="Swapnil makwana" email="swapnilmakwana4@gmail.com" phone="8978933611" address="House no 5-97/23,Vrc Homes, Patelguda" mode={mode}/>} />
-      </Routes>
-      
-      
-      </div>
+      <Router>
+        <Navbar title="Textify!" aboutText="About Us" mode={mode} toggleMode={toggleMode} t_mode={tempMode}/>
+        <div className="container">
+          <Routes>
+            <Route path="/" element={<TextForm title="What do you want me to help you with?" mode={mode}  info="Enter ur shit to have operations"/>} />
+            
+            <Route path="/about" element={<About owner="Swapnil makwana" email="swapnilmakwana4@gmail.com" phone="8978933611" address="House no 5-97/23,Vrc Homes, Patelguda" mode={mode}/>} />
+          </Routes>
+        </div>
       </Router>
     </>
   );
